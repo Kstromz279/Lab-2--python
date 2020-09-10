@@ -1,26 +1,25 @@
 # Author: Khalil Stroman kzs5955@psu.edu
-# Collaborator:
-# Collaborator:
-# Collaborator:
-# Section: 1
-# Breakout: 12
+# Collaborator: Daniel Stebbins drs5972@psu.edu
+# Collaborator: David Kim dkk5396@psu.edu
+# Collaborator: Emanuel Bassill Chuckran eab6017@psu.edu
+# Section: 12
+# Breakout: 2
 def getLetterGrade(grade):
-  
   if grade >= 93:
     return "A"
-  elif grade >= 90 and grade < 93:
+  elif grade >= 90:
     return "A-"
-  elif grade >= 87 and grade < 90:
+  elif grade >= 87:
     return "B+"
-  elif grade >= 83 and grade < 87:
+  elif grade >= 83:
     return "B"
-  elif grade >= 80 and grade < 83:
+  elif grade >= 80:
     return "B-"
-  elif grade >= 77 and grade < 80:
+  elif grade >= 77:
     return "C+"
-  elif grade >= 70 and grade < 77:
+  elif grade >= 70:
     return "C"
-  elif grade >= 60 and grade < 70:
+  elif grade >= 60:
     return "D"
   else:
     return "F"
@@ -29,7 +28,7 @@ def getLetterGrade(grade):
 def run():
   grade = input("Enter your CMPSC 131 grade: ")
   grade = float(grade)
-  print(f"Your letter grade for CMPSC 131 is{getLetterGrade(grade)}")
-  
+  print(f"Your letter grade for CMPSC 131 is {getLetterGrade(grade)}.")
+
 if __name__ == "__main__":
   run()
